@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex-Order</title>
+	<style type="text/css">
+			.block{
+			width: 150px;
+			height: 150px;
+			background-color: orange;
+			border: 1px solid red;
+			font-size: 30px;
+			color: white;
+		}
+		.container{
+			display: flex;
+			height: 400px;
+			border: 1px solid #ccc;
+		}
+		.block-3{
+			order: 3;
+		}
+		.block-1{
+			order: 600;
+		}
+		.block-4{
+			order: -3;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="block-1 block">FlexItemA</div>	
+		<div class="block-2 block">FlexItemB</div>
+		<div class="block-3 block">FlexItemC</div>
+		<div class="block-4 block">FlexItemD</div>
+	</div>	
+</body>
+</html>

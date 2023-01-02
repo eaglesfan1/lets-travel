@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex-Wrap</title>
+	<style type="text/css">
+		.block{
+			width: 150px;
+			height: 150px;
+			background-color: orange;
+			border: 1px solid red;
+			font-size: 30px;
+			color: white;
+		}
+		.container{
+			display: flex;
+			height: 400px;
+			border: 1px solid #ccc;
+			flex-direction: column;
+			flex-wrap: wrap-reverse;
+			/*flex-wrap: wrap-reverse;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="block-1 block">Flex<br>Item<br>A</div>	
+		<div class="block-2 block">Flex<br>Item<br>B</div>
+		<div class="block-3 block">Flex<br>Item<br>C</div>
+		<div class="block-4 block">Flex<br>Item<br>D</div>
+	</div>	
+</body>
+</html>
