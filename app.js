@@ -63,5 +63,5 @@ app.get('/login', (req, resp) => {
      
 })
 
-let port = process.env.PORT || 8080;
-app.listen(port, () => console.log(`Listening ${port}...`));
+let HTTP_PORT = process.env.PORT || 8080;
+app.listen(HTTP_PORT);
